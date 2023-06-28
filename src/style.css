@@ -1,0 +1,149 @@
+:root {
+  --b-color: #dbfcff;
+  --e-color: #42e2b8;
+  --e2-color: #95d8e1;
+  --p-color: #faff7f;
+  --p2-color: #97fb57;
+  --font: Trebuchet;
+}
+
+body {
+  background-color: var(--b-color);
+  font-family: var(--font);
+}
+
+header {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+main {
+  background-color: none;
+  display: flex;
+  align-items: stretch;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0px 2vw 10px;
+}
+
+#mkdn {
+  align-content: space-evenly;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#subtitle {
+  font-size: 1.2em;
+  color: #477b7f;
+  font-weight: 5;
+  font-style: italic;
+}
+
+h1 {
+  color: #2a494c;
+  font-size: 3em;
+}
+
+#e-window {
+  width: 40vw;
+  min-width: 300px;
+  height: 400px;
+  padding: 18px;
+  margin: 10px 10px 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+
+  background-color: var(--e-color);
+  background-image: linear-gradient(var(--e-color), var(--e2-color));
+  border-style: none;
+  border-radius: 8px;
+}
+
+#editor {
+  height: 82%;
+  width: 92%;
+  resize: none;
+  padding: 10px 10px 10px 10px;
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+  background-color: #fff;
+  border-style: none;
+  border-radius: 8px;
+  box-shadow: inset 0px 2px 4px #888;
+  
+  font-size: 1.1em;
+}
+
+#p-window {
+  width: 40vw;
+  min-width: 300px;
+  height: 400px;
+  padding: 18px;
+  margin: 10px 10px 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-color: var(--p-color);
+  background-image: linear-gradient(var(--p-color), var(--p2-color));
+  border-style: none;
+  border-radius: 8px;
+}
+
+#preview {
+  height: 82%;
+  width: 92%;
+  resize: none;
+  padding: 10px 10px 10px 10px;
+  
+  background-color: #fff;
+  border-style: none;
+  border-radius: 8px;
+  box-shadow: inset 0px 2px 4px #888;
+  
+  font-size: 1.1em;
+  overflow-wrap: normal;
+  overflow-y: scroll;
+}
+
+h2 {
+  color: #0e1819;
+  font-size: 1.4em;
+  line-height: 10px;
+}
+
+.renderedText {
+  font-family: var(--font);
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.fa {
+  color: #1a6066;
+}
+
+footer {
+  color: #1a6066;
+  position: static;
+  text-align: center;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
